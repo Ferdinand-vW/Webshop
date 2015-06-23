@@ -7,5 +7,6 @@ namespace Webshop.Models
 {
     public class Account
     {
+        public int AccountID { get; set; }
     }
 }

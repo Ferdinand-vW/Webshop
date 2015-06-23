@@ -7,5 +7,6 @@ namespace Webshop.Models
 {
     public class AddressInformation
     {
+        public int AddressInformationID { get; set; }
     }
 }

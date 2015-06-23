@@ -7,5 +7,6 @@ namespace Webshop.Models
 {
     public class BillingInformation
     {
+        public int BillingInformationID { get; set; }
     }
 }

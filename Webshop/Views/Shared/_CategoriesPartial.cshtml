@@ -1,0 +1,9 @@
+﻿@model IEnumerable<Webshop.Models.Category>
+<ul class="nav navbar-nav">
+    @foreach(var item in Model)
+    {
+        <li>
+            @Html.DisplayFor(modelItem => item.Name)
+        </li>
+    }
+</ul>

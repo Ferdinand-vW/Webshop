@@ -3,11 +3,13 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Web;
 using System.Web.Mvc;
+using Webshop.Models;
 
 namespace Webshop.Controllers
 {
-    public class HomeController : LayoutController
+    public class HomeController : Controller
     {
+        public WebshopEntities db = new WebshopEntities();
         public ActionResult Index()
         {
             return View();
@@ -18,6 +20,11 @@ namespace Webshop.Controllers
             ViewBag.Message = "Your application description page.";
 
             return View();
+        }
+
+        public ActionResult showCategories()
+        {
+            return View(db.Categories.ToList());
         }
 
         public ActionResult Contact()

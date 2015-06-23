@@ -12,7 +12,7 @@ namespace Webshop.Models
     public class Product
     {
         [Key]
-        public int ID { get; set; }
+        public int ProductID { get; set; }
         public string Name { get; set; }
 
         [Display(Name= "Release date")]

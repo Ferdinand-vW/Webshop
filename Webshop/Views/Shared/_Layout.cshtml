@@ -1,4 +1,4 @@
-﻿@model IEnumerable<Webshop.Models.Category>
+﻿
 <!DOCTYPE html>
 <html>
 <head>
@@ -31,15 +31,13 @@
         </div>
     </div>
 
-    <div class="container left-body-content">
-        <h4>Category</h4>
-        <ul>
-            @foreach (var item in Model)
-            {
-                <li>@Html.DisplayFor(modelItem => item.Name)</li>
-            }
-        </ul>
-    </div>
+    <nav class="navbar navbar-default">
+        <div class="container">
+            <div class="collapse navbar-collapse">
+            @Html.Action("showCategories", "Layout")
+            </div>
+        </div>
+    </nav>
     <div class="container body-content">
         @RenderBody()
         <hr />

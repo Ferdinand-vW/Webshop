@@ -13,7 +13,11 @@ namespace Webshop.Controllers
 
         public LayoutController()
         {
-            ViewData["Categories"] = db.Categories.ToList();
+        }
+
+        public ActionResult showCategories()
+        {
+            return PartialView("_CategoriesPartial", db.Categories.ToList());
         }
 	}
 }
