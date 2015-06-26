@@ -31,13 +31,13 @@
         </div>
     </div>
 
-    <nav class="navbar navbar-default">
-        <div class="container">
-            <div class="collapse navbar-collapse">
-            @Html.Action("showCategories", "Layout")
-            </div>
-        </div>
-    </nav>
+    <div class="name">
+
+    </div>
+
+    <div class="navContainer">
+        @Html.Action("showCategories", "Layout")
+    </div>
     <div class="container body-content">
         @RenderBody()
         <hr />

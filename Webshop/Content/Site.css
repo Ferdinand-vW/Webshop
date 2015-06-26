@@ -40,3 +40,13 @@ input[type="checkbox"].input-validation-error {
 .validation-summary-valid {
     display: none;
 }
+
+.name {
+    height:100px;
+    background-color:red;
+}
+
+.navContainer {
+    height:50px;
+    background-color:blue;
+}
