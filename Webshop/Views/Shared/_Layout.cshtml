@@ -31,14 +31,22 @@
         </div>
     </div>
 
-    <div class="name">
-
-    </div>
-
-    <div class="navContainer">
-        @Html.Action("showCategories", "Layout")
-    </div>
     <div class="container body-content">
+        <div class="upper-Container">
+            <div class="name-Container">
+                <h1 class="name">Webshop Name</h1>
+            </div>
+            <div class="search-Container">
+                <form class="search-form">
+                    <input type="search" class="search-input" name="search" placeholder="Search for a product"/>
+                    <input type="submit" class="search-input" value="Search"/>
+                </form>
+            </div>
+        </div>
+        <div class="nav-Container">
+            @Html.Action("showCategories", "Layout")
+        </div>
+
         @RenderBody()
         <hr />
         <footer>

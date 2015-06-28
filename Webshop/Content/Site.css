@@ -41,12 +41,78 @@ input[type="checkbox"].input-validation-error {
     display: none;
 }
 
-.name {
+.upper-Container {
+    display:table;
     height:100px;
-    background-color:red;
+    width:100%;
 }
 
-.navContainer {
+.name-Container {
+    display:table-cell;
+    text-align:center;
+    vertical-align:middle;
+}
+
+.search-Container {
+    width:250px;
+    display:table-cell;
+    vertical-align:middle;
+}
+
+.search-form {
+    display:table;
+}
+
+.search-input {
+    display:inline;
+}
+
+.nav-Container {
     height:50px;
-    background-color:blue;
+    display:table;
+    width:100%;
+    text-align:center;
+}
+
+.name {
+    margin-top:0;
+    vertical-align:middle;
+}
+
+.navbar_ {
+    list-style-type:none;
+    display:table-cell;
+    vertical-align:middle;
+    margin:0;
+    padding-left:100px;
+    background:linear-gradient(#454545, #353535);
+}
+
+.navbar-item {
+    padding-left:20px;
+    padding-right:20px;
+    float:left;
+    display:inline;
+    border-width:1px;
+    border-style:solid;
+    border-top:none;
+    border-bottom:none;
+    border-left:none;
+    border-color:lightgray;
+    color:lightgray;
+    background:none;
+}
+
+.navbar-item:hover {
+    color:white;
+}
+
+.navbar-item:first-of-type {
+    border-left-style:solid;
+    border-width:1px;
+}
+
+.navbar-item:last-of-type {
+    float:right;
+    border-right:none;
 }

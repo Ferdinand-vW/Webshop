@@ -10,8 +10,8 @@ C:\Users\Ferdinand\Programming\Visual Studio 2013\Projects\Webshop\Webshop.Tests
 C:\Users\Ferdinand\Programming\Visual Studio 2013\Projects\Webshop\Webshop.Tests\bin\Debug\System.Web.WebPages.dll
 C:\Users\Ferdinand\Programming\Visual Studio 2013\Projects\Webshop\Webshop.Tests\bin\Debug\System.Web.WebPages.Razor.dll
 C:\Users\Ferdinand\Programming\Visual Studio 2013\Projects\Webshop\Webshop.Tests\bin\Debug\Webshop.dll
-C:\Users\Ferdinand\Programming\Visual Studio 2013\Projects\Webshop\Webshop.Tests\bin\Debug\EntityFramework.dll
 C:\Users\Ferdinand\Programming\Visual Studio 2013\Projects\Webshop\Webshop.Tests\bin\Debug\Microsoft.AspNet.Identity.EntityFramework.dll
+C:\Users\Ferdinand\Programming\Visual Studio 2013\Projects\Webshop\Webshop.Tests\bin\Debug\EntityFramework.dll
 C:\Users\Ferdinand\Programming\Visual Studio 2013\Projects\Webshop\Webshop.Tests\bin\Debug\System.Web.Optimization.dll
 C:\Users\Ferdinand\Programming\Visual Studio 2013\Projects\Webshop\Webshop.Tests\bin\Debug\Owin.dll
 C:\Users\Ferdinand\Programming\Visual Studio 2013\Projects\Webshop\Webshop.Tests\bin\Debug\Microsoft.AspNet.Identity.Core.dll
@@ -29,8 +29,8 @@ C:\Users\Ferdinand\Programming\Visual Studio 2013\Projects\Webshop\Webshop.Tests
 C:\Users\Ferdinand\Programming\Visual Studio 2013\Projects\Webshop\Webshop.Tests\bin\Debug\System.Web.WebPages.xml
 C:\Users\Ferdinand\Programming\Visual Studio 2013\Projects\Webshop\Webshop.Tests\bin\Debug\System.Web.WebPages.Deployment.xml
 C:\Users\Ferdinand\Programming\Visual Studio 2013\Projects\Webshop\Webshop.Tests\bin\Debug\System.Web.WebPages.Razor.xml
-C:\Users\Ferdinand\Programming\Visual Studio 2013\Projects\Webshop\Webshop.Tests\bin\Debug\EntityFramework.xml
 C:\Users\Ferdinand\Programming\Visual Studio 2013\Projects\Webshop\Webshop.Tests\bin\Debug\Microsoft.AspNet.Identity.EntityFramework.xml
+C:\Users\Ferdinand\Programming\Visual Studio 2013\Projects\Webshop\Webshop.Tests\bin\Debug\EntityFramework.xml
 C:\Users\Ferdinand\Programming\Visual Studio 2013\Projects\Webshop\Webshop.Tests\bin\Debug\System.Web.Optimization.xml
 C:\Users\Ferdinand\Programming\Visual Studio 2013\Projects\Webshop\Webshop.Tests\bin\Debug\Microsoft.AspNet.Identity.Core.xml
 C:\Users\Ferdinand\Programming\Visual Studio 2013\Projects\Webshop\Webshop.Tests\bin\Debug\Microsoft.Owin.xml
