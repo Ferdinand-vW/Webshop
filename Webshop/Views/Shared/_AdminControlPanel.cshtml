@@ -9,11 +9,28 @@
 <body>
     <div class="body-container">
         <div class="navpanel">
-            test
+            <ul class="nav-list">
+                <li>Index</li>
+                <li>Products</li>
+                <li>Categories</li>
+                <li>Statistics</li>
+            </ul>
         </div>
-        <div class="container">
-            @RenderBody()
-        </div>
+        <div class="page-container">
+            <div class="panel-name-container">
+                <div>
+                    <h1>
+                        Admin control panel
+                    </h1>
+                    <hr />
+                </div>
+            </div>
+            <div class="content-container">
+                <div>
+                    @RenderBody()
+                </div>
+            </div>
+         </div>
     </div>
 </body>
 </html>
