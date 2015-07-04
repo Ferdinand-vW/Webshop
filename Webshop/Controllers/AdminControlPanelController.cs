@@ -14,5 +14,20 @@ namespace Webshop.Controllers
         {
             return View();
         }
+
+        public ActionResult Products()
+        {
+            return View();
+        }
+
+        public ActionResult Categories()
+        {
+            return View();
+        }
+
+        public ActionResult Statistics()
+        {
+            return View();
+        }
 	}
 }

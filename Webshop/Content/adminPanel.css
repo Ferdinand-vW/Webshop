@@ -32,9 +32,15 @@
     padding-top:10px;
 }
 
-.nav-list li:hover {
+.nav-list li a {
+    text-decoration:none;
+    color:black;
+}
+
+.nav-list li a:hover {
     color:white;
 }
+
 
 .page-container {
     display:table;

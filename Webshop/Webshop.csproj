@@ -235,6 +235,9 @@
     <Content Include="Views\Shared\_CategoriesPartial.cshtml" />
     <Content Include="Views\Shared\_AdminControlPanel.cshtml" />
     <Content Include="Views\AdminControlPanel\Index.cshtml" />
+    <Content Include="Views\AdminControlPanel\Products.cshtml" />
+    <Content Include="Views\AdminControlPanel\Categories.cshtml" />
+    <Content Include="Views\AdminControlPanel\Statistics.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
