@@ -158,8 +158,11 @@
     <Compile Include="App_Start\FilterConfig.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="App_Start\Startup.Auth.cs" />
+    <Compile Include="Areas\AdminControlPanel\AdminControlPanelAreaRegistration.cs" />
+    <Compile Include="Areas\MainWebsite\MainWebsiteAreaRegistration.cs" />
     <Compile Include="Controllers\AccountController.cs" />
-    <Compile Include="Controllers\AdminControlPanelController.cs" />
+    <Compile Include="Controllers\AdminControlPanel\IndexController.cs" />
+    <Compile Include="Controllers\AdminControlPanel\ProductsController.cs" />
     <Compile Include="Controllers\CategoryController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\LayoutController.cs" />
@@ -190,6 +193,8 @@
     <Content Include="Content\Site.css" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
+    <Content Include="Areas\AdminControlPanel\Views\web.config" />
+    <Content Include="Areas\MainWebsite\Views\web.config" />
     <None Include="Scripts\jquery-1.10.2.intellisense.js" />
     <Content Include="Scripts\jquery-1.10.2.js" />
     <Content Include="Scripts\jquery-1.10.2.min.js" />
@@ -227,20 +232,25 @@
     <Content Include="Views\Account\Manage.cshtml" />
     <Content Include="Views\Account\Register.cshtml" />
     <Content Include="Views\Shared\_LoginPartial.cshtml" />
-    <Content Include="Views\Products\Create.cshtml" />
-    <Content Include="Views\Products\Delete.cshtml" />
-    <Content Include="Views\Products\Details.cshtml" />
-    <Content Include="Views\Products\Edit.cshtml" />
-    <Content Include="Views\Products\Index.cshtml" />
+    <Content Include="Views\AdminControlPanel\Products\Create.cshtml" />
+    <Content Include="Views\AdminControlPanel\Products\Delete.cshtml" />
+    <Content Include="Views\AdminControlPanel\Products\Details.cshtml" />
+    <Content Include="Views\AdminControlPanel\Products\Edit.cshtml" />
+    <Content Include="Views\AdminControlPanel\Products\Index.cshtml" />
     <Content Include="Views\Shared\_CategoriesPartial.cshtml" />
     <Content Include="Views\Shared\_AdminControlPanel.cshtml" />
     <Content Include="Views\AdminControlPanel\Index.cshtml" />
-    <Content Include="Views\AdminControlPanel\Products.cshtml" />
     <Content Include="Views\AdminControlPanel\Categories.cshtml" />
     <Content Include="Views\AdminControlPanel\Statistics.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
+    <Folder Include="Areas\AdminControlPanel\Controllers\" />
+    <Folder Include="Areas\AdminControlPanel\Models\" />
+    <Folder Include="Areas\AdminControlPanel\Views\Shared\" />
+    <Folder Include="Areas\MainWebsite\Controllers\" />
+    <Folder Include="Areas\MainWebsite\Models\" />
+    <Folder Include="Areas\MainWebsite\Views\Shared\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="fonts\glyphicons-halflings-regular.woff" />

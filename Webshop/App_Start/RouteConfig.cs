@@ -18,6 +18,18 @@ namespace Webshop
                 url: "{controller}/{action}/{id}",
                 defaults: new { controller = "Home", action = "Index", id = UrlParameter.Optional }
             );
+
+            routes.MapRoute(
+                name: "AdminControlPanel",
+                url: "AdminControlPanel/{controller}",
+                defaults: new { controller = "AdminControlPanel/Index", action = "Index", UrlParameter.Optional }
+            );
+
+            /*routes.MapRoute(
+                name: "acProducts",
+                url: "AdminControlPanel/Products/{action}",
+                defaults: new { controller = "ProductsController", action = "Index", id = UrlParameter.Optional }
+            );*/
         }
     }
 }
