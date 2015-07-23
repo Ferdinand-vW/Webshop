@@ -1,0 +1,36 @@
+﻿<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>@ViewBag.Title</title>
+    @Styles.Render("~/Content/AdminPanel.css")
+</head>
+<body>
+    <div class="body-container">
+        <div class="navpanel">
+            <ul class="nav-list">
+                <li><a href="~/AdminControlPanel/Index">Index</a></li>
+                <li><a href="~/AdminControlPanel/Products">Products</a></li>
+                <li><a href="~/AdminControlPanel/Categories">Categories</a></li>
+                <li><a href="~/AdminControlPanel/Statistics">Statistics</a></li>
+            </ul>
+        </div>
+        <div class="page-container">
+            <div class="panel-name-container">
+                <div>
+                    <h1>
+                        Admin control panel
+                    </h1>
+                    <hr />
+                </div>
+            </div>
+            <div class="content-container">
+                <div>
+                    @RenderBody()
+                </div>
+            </div>
+         </div>
+    </div>
+</body>
+</html>
