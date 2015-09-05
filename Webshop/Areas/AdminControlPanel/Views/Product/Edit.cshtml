@@ -1,0 +1,87 @@
+﻿@{
+    Layout = "~/Areas/AdminControlPanel/Views/Shared/_AdminControlPanel.cshtml";
+}
+
+@model Webshop.Models.Product
+
+<div>
+    <h3>Products - Add a new product</h3>
+</div>
+
+<div>
+    @Html.ActionLink("Back to Products", "Index")
+</div>
+
+
+@using (Html.BeginForm("Edit", "Product", FormMethod.Post, new { enctype = "multipart/form-data" }))
+{
+    @Html.AntiForgeryToken()
+
+    <div class="form-horizontal">
+        @Html.ValidationSummary(true)
+        <div class="form-group">
+            @Html.HiddenFor(model => model.ProductID)
+            @Html.LabelFor(model => model.Name, new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                @Html.EditorFor(model => model.Name)
+                @Html.ValidationMessageFor(model => model.Name)
+            </div>
+        </div>
+
+        <div class="form-group">
+            @Html.LabelFor(model => model.ImageID, new { @class = "control-label col-md-2" })
+
+            <div class="col-md-10">
+                @if (Model != null && Model.Image != null)
+                {
+                    @Html.ActionLink("Remove", "RemoveImage", new { productid = Model.ProductID, imageid = Model.ImageID })
+                    @Html.HiddenFor(model => model.ImageID)
+                }
+                else
+                {
+                    @Html.Raw("<input id='Image' type='file' name='file'/>")
+                    @Html.ValidationMessage("file")
+                }
+                
+            </div>
+        </div>
+
+        <div class="form-group">
+            @Html.LabelFor(model => model.ReleaseDate, new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                @Html.EditorFor(model => model.ReleaseDate)
+                @Html.ValidationMessageFor(model => model.ReleaseDate)
+            </div>
+        </div>
+
+        <div class="form-group">
+            @Html.LabelFor(model => model.Description, new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                @Html.EditorFor(model => model.Description)
+                @Html.ValidationMessageFor(model => model.Description)
+            </div>
+        </div>
+
+        <div class="form-group">
+            @Html.LabelFor(model => model.Category, new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                @Html.DropDownList("CategoryID", (List<SelectListItem>)ViewBag.Items)
+                @Html.ValidationMessageFor(model => model.Category)
+            </div>
+        </div>
+
+        <div class="form-group">
+            <div class="col-md-offset-2 col-md-10">
+                <input type="submit" value="Save changes" class="btn btn-default" />
+            </div>
+
+        </div>
+
+    </div>
+}
+
+@section Scripts {
+    @Scripts.Render("~/bundles/jqueryval")
+}
+
+

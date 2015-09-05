@@ -1,0 +1,35 @@
+﻿@{
+    Layout = "~/Areas/AdminControlPanel/Views/Shared/_AdminControlPanel.cshtml";
+}
+
+@model IEnumerable<Webshop.Models.Category>
+
+<div>
+    <h3>Categories</h3>
+</div>
+
+<div>
+    @Html.ActionLink("Add category", "Create")
+</div>
+
+<table class="table">
+    <tr>
+        @ViewBag.Error
+    </tr>
+    <tr>
+        <th>@Html.DisplayNameFor(model => model.CategoryID)</th>
+        <th>@Html.DisplayNameFor(model => model.Name)</th>
+        <th></th>
+    </tr>
+
+    @foreach(var item in Model)
+    {
+        <tr>
+            <td>@Html.DisplayFor(modelItem => item.CategoryID)</td>
+            <td>@Html.DisplayFor(modelItem => item.Name)</td>
+            <th>@Html.ActionLink("Edit", "Edit", new { categoryId = item.CategoryID }) | @Html.ActionLink("Delete", "Delete", new { categoryId = item.CategoryID })</th>
+        </tr>
+    }
+</table>
+
+

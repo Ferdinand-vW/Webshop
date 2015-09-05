@@ -1,0 +1,26 @@
+﻿@{
+    Layout = "~/Areas/AdminControlPanel/Views/Shared/_AdminControlPanel.cshtml";
+}
+
+@model Webshop.Models.Product
+
+<div>
+    <div class="row_">
+        <div class="cell">
+            <h2>@Model.Name</h2>
+        </div>
+        <div class="cell">
+            @Html.ActionLink("Edit", "Edit", new { id = Model.ProductID})
+            @Html.ActionLink("Products", "Index")
+        </div>
+    </div>
+    @if (@Model.ImageID != null)
+    {
+        <img src="@Url.Content(Model.Image.Path)" width="@Model.Image.Width" height="@Model.Image.Height" class="productimage"/>
+    }
+    <p><strong>Release date: </strong>@Model.ReleaseDate.ToShortDateString()</p>
+    <p><strong>Rating: </strong>@Model.Rating / 5 (@Model.NumVotes vote(s))</p>
+    <p><strong>Description:</strong>
+        @Html.Raw(Model.Description)
+    </p>
+</div>

@@ -105,6 +105,6 @@ C:\Users\Ferdinand\Programming\Visual Studio 2013\Projects\Webshop\Webshop\bin\M
 C:\Users\Ferdinand\Programming\Visual Studio 2013\Projects\Webshop\Webshop\bin\Microsoft.Owin.Security.Google.xml
 C:\Users\Ferdinand\Programming\Visual Studio 2013\Projects\Webshop\Webshop\bin\Microsoft.Owin.Security.Twitter.xml
 C:\Users\Ferdinand\Programming\Visual Studio 2013\Projects\Webshop\Webshop\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
-C:\Users\Ferdinand\Programming\Visual Studio 2013\Projects\Webshop\Webshop\obj\Debug\Webshop.csprojResolveAssemblyReference.cache
 C:\Users\Ferdinand\Programming\Visual Studio 2013\Projects\Webshop\Webshop\obj\Debug\Webshop.dll
 C:\Users\Ferdinand\Programming\Visual Studio 2013\Projects\Webshop\Webshop\obj\Debug\Webshop.pdb
+C:\Users\Ferdinand\Programming\Visual Studio 2013\Projects\Webshop\Webshop\obj\Debug\Webshop.csprojResolveAssemblyReference.cache

@@ -4,16 +4,18 @@
 <head>
     <meta name="viewport" content="width=device-width" />
     <title>@ViewBag.Title</title>
-    @Styles.Render("~/Content/AdminPanel.css")
+    @Styles.Render("~/Content/adminPanel.css")
+    @Styles.Render("~/Content/bootstrap.css")
+    @Scripts.Render("~/bundles/modernizr")
 </head>
 <body>
     <div class="body-container">
         <div class="navpanel">
             <ul class="nav-list">
-                <li><a href="~/AdminControlPanel/Index">Index</a></li>
-                <li><a href="~/AdminControlPanel/Products">Products</a></li>
-                <li><a href="~/AdminControlPanel/Categories">Categories</a></li>
-                <li><a href="~/AdminControlPanel/Statistics">Statistics</a></li>
+                <li>@Html.ActionLink("Index", "Index", "Home")</li>
+                <li>@Html.ActionLink("Products", "Index", "Product")</li>
+                <li>@Html.ActionLink("Categories", "Index", "Category")</li>
+                <li>@Html.ActionLink("Statistics", "Index", "Statistic")</li>
             </ul>
         </div>
         <div class="page-container">
@@ -32,5 +34,9 @@
             </div>
          </div>
     </div>
+
+    @Scripts.Render("~/bundles/jquery")
+    @Scripts.Render("~/bundles/bootstrap")
+    @RenderSection("scripts", required: false)
 </body>
 </html>

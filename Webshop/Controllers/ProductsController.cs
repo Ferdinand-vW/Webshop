@@ -10,7 +10,7 @@ using Webshop.Models;
 
 namespace Webshop.Controllers
 {
-    public class ProductsController : CategoryController
+    public class ProductsController : Controller
     {
         private WebshopEntities db = new WebshopEntities();
 

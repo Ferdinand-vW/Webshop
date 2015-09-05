@@ -2,16 +2,18 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;
+using System.Diagnostics;
 using System.Web.Mvc;
 
-namespace Webshop.Controllers
+namespace Webshop.Areas.AdminControlPanel.Controllers
 {
-    public class AdminControlPanelController : Controller
+    public class HomeController : Controller
     {
         //
         // GET: /AdminControlPanel/
         public ActionResult Index()
         {
+            Debug.WriteLine("test");
             return View();
         }
 

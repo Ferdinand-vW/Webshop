@@ -158,8 +158,11 @@
     <Compile Include="App_Start\FilterConfig.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="App_Start\Startup.Auth.cs" />
+    <Compile Include="Areas\AdminControlPanel\AdminControlPanelAreaRegistration.cs" />
+    <Compile Include="Areas\AdminControlPanel\Controllers\CategoryController.cs" />
+    <Compile Include="Areas\AdminControlPanel\Controllers\ProductController.cs" />
     <Compile Include="Controllers\AccountController.cs" />
-    <Compile Include="Controllers\AdminControlPanelController.cs" />
+    <Compile Include="Areas\AdminControlPanel\Controllers\HomeController.cs" />
     <Compile Include="Controllers\CategoryController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\LayoutController.cs" />
@@ -174,6 +177,7 @@
     <Compile Include="Models\Category.cs" />
     <Compile Include="Models\Customer.cs" />
     <Compile Include="Models\IdentityModels.cs" />
+    <Compile Include="Models\Image.cs" />
     <Compile Include="Models\Product.cs" />
     <Compile Include="Models\WebshopEntities.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -190,6 +194,12 @@
     <Content Include="Content\Site.css" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
+    <Content Include="Areas\AdminControlPanel\Views\web.config" />
+    <Content Include="Areas\AdminControlPanel\Views\Product\Create.cshtml" />
+    <Content Include="Areas\AdminControlPanel\Views\Product\Details.cshtml" />
+    <Content Include="Areas\AdminControlPanel\Views\Product\Edit.cshtml" />
+    <Content Include="Areas\AdminControlPanel\Views\Category\Create.cshtml" />
+    <Content Include="Areas\AdminControlPanel\Views\Category\Edit.cshtml" />
     <None Include="Scripts\jquery-1.10.2.intellisense.js" />
     <Content Include="Scripts\jquery-1.10.2.js" />
     <Content Include="Scripts\jquery-1.10.2.min.js" />
@@ -202,7 +212,9 @@
     <Content Include="Scripts\respond.js" />
     <Content Include="Scripts\respond.min.js" />
     <Content Include="Scripts\_references.js" />
-    <Content Include="Web.config" />
+    <Content Include="Web.config">
+      <SubType>Designer</SubType>
+    </Content>
     <Content Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </Content>
@@ -233,14 +245,16 @@
     <Content Include="Views\Products\Edit.cshtml" />
     <Content Include="Views\Products\Index.cshtml" />
     <Content Include="Views\Shared\_CategoriesPartial.cshtml" />
-    <Content Include="Views\Shared\_AdminControlPanel.cshtml" />
-    <Content Include="Views\AdminControlPanel\Index.cshtml" />
-    <Content Include="Views\AdminControlPanel\Products.cshtml" />
-    <Content Include="Views\AdminControlPanel\Categories.cshtml" />
-    <Content Include="Views\AdminControlPanel\Statistics.cshtml" />
+    <Content Include="Areas\AdminControlPanel\Views\Shared\_AdminControlPanel.cshtml" />
+    <Content Include="Areas\AdminControlPanel\Views\Home\Index.cshtml" />
+    <Content Include="Areas\AdminControlPanel\Views\Product\Index.cshtml" />
+    <Content Include="Areas\AdminControlPanel\Views\Category\Index.cshtml" />
+    <Content Include="Areas\AdminControlPanel\Views\Statistics\Index.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
+    <Folder Include="Areas\AdminControlPanel\Models\" />
+    <Folder Include="Images\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="fonts\glyphicons-halflings-regular.woff" />

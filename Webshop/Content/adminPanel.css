@@ -86,3 +86,83 @@
 .clear {
     clear:both;
 }
+
+.table_ {
+    border:solid;
+    border-width:1px;
+    border-spacing:0px;
+    max-width:inherit;
+}
+
+.table_ th {
+    background-color:black;
+    color:white;
+    border-right:solid;
+    border-color:white;
+    border-width:1px;
+    padding-left:10px;
+    padding-right:10px;
+    text-align:center;
+}
+
+.table_ th:last-of-type {
+    border-right:none;
+}
+
+.table_ td {
+    height:30px;
+    padding-left:10px;
+    padding-right:10px;
+    text-align:center;
+    border:solid;
+    border-width:1px;
+}
+
+.row_ {
+    display:table-row;
+}
+
+.row_ div {
+    display:table-cell;
+    padding-left:10px;
+    padding-right:10px;
+    vertical-align:middle;
+}
+
+
+* Set width on the form input elements since they're 100% wide by default */
+input,
+select,
+textarea {
+    max-width: 280px;
+}
+
+/* styles for validation helpers */
+.field-validation-error {
+    color: #b94a48;
+}
+
+.field-validation-valid {
+    display: none;
+}
+
+input.input-validation-error {
+    border: 1px solid #b94a48;
+}
+
+input[type="checkbox"].input-validation-error {
+    border: 0 none;
+}
+
+.validation-summary-errors {
+    color: #b94a48;
+}
+
+.validation-summary-valid {
+    display: none;
+}
+
+.productimage {
+    max-height:600px;
+    max-width:600px;
+}

@@ -1,0 +1,17 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Web;
+
+namespace Webshop.Models
+{
+    public class Image
+    {
+        public int ImageID { get; set; }
+        public string Name { get; set; }
+        public string Path { get; set; }
+        public int Width { get; set; }
+        public int Height { get; set; }
+        public int NumLinked { get; set; }
+    }
+}
